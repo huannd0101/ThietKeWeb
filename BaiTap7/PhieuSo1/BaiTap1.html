@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 1 - Phiếu 1</title>
+</head>
+<body>
+    
+    <form>
+        <input type="text" name="" id="" onfocus="openWin();" onchange="Change()">
+    </form>
+
+
+    <p id="demo"></p>
+    <script>
+        var myWindow;
+        function openWin(){
+            myWindow = window.open("", "myWindow", "width=300px, height=200px");
+            myWindow.document.write("focus");
+            myWindow.opener();
+        }
+    
+        function Change() {
+            myWindow = window.open("", "myWindow", "width = 300px", "height = 200px");
+            myWindow.document.write("change")
+        }
+    </script>
+</body>
+</html>

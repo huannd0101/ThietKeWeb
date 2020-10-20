@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 4 - Phiếu 1</title>
+</head>
+<body>
+    
+    <form name="nhap">
+        Số thứ nhất: <input type="text" name="a"> <br>
+        <button onclick="tong()">+</button>
+        <button onclick="hieu()">-</button>
+        <button onclick="tich()">*</button>
+        <button onclick="chia()">/</button>
+        <button onclick="mu()">^</button>
+        <button>^</button>
+        <br>Số thứ hai : <input type="text" name="b"> <br>
+        Kết quả<input type="text" name="result">
+    </form>
+
+    <script>
+        var x = document.nhap.a.value;
+        var y = document.nhao.b.value;
+        
+        function tong() {
+            document.nhap.result.value = x + y;
+        }
+        function hieu() {
+            document.nhap.result.value = x - y;
+        }
+        function tich() {
+            document.nhap.result.value = x * y;
+        }
+        function chia() {
+            document.nhap.result.value = x / y;
+        }
+        function mu() {
+            document.nhap.result.value = Math.pow(x, y);
+        }        
+    </script>
+
+</body>
+</html>
